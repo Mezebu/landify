@@ -16,7 +16,6 @@ const Content = () => {
             <img src={Phone} alt="phone" />
           </div>
         </div>
-        <div className="left-band-1"></div>
       </div>
     </>
   );
