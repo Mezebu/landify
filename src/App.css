@@ -37,6 +37,12 @@ html {
 }
 
 .hero {
+  background: url("./assests/images/Background.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* .hero {
   background: rgba(242, 247, 255, 0.7);
   backdrop-filter: blur(100px);
   position: relative;
@@ -51,7 +57,7 @@ html {
   opacity: 0.6;
   background: radial-gradient(#8c30f5, #fff);
   border-radius: 50%;
-}
+}  */
 .hero > * {
   position: relative;
   z-index: 1;
