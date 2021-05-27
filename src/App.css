@@ -42,22 +42,6 @@ html {
   position: relative;
 }
 
-/* .hero {
-  background: rgba(242, 247, 255, 0.7);
-  backdrop-filter: blur(100px);
-  position: relative;
-}
-.hero:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 406px;
-  height: 406px;
-  opacity: 0.6;
-  background: radial-gradient(#8c30f5, #fff);
-  border-radius: 50%;
-}  */
 .hero > * {
   position: relative;
   z-index: 1;
@@ -691,4 +675,52 @@ html {
 
 .badges > img {
   width: 135px;
+}
+
+@media screen and (max-width: 1020px) {
+  .App {
+    display: none;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);
+    background: linear-gradient(to right, #734b6d, #42275a);
+  }
+
+  .small-device {
+    animation: device 4s infinite;
+  }
+
+  @keyframes device {
+    0% {
+      color: aqua;
+      margin-left: 0px;
+      top: 0px;
+    }
+    25% {
+      color: navajowhite;
+      margin-left: 200px;
+      top: 0px;
+    }
+    50% {
+      color: palegreen;
+      margin-left: 200px;
+      top: 200px;
+    }
+    75% {
+      color: burlywood;
+      margin-left: 0px;
+      top: 200px;
+    }
+    100% {
+      color: papayawhip;
+      margin-left: 0px;
+      top: 0px;
+    }
+  }
 }

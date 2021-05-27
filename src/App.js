@@ -14,15 +14,23 @@ import Footer from "./components/Footer/Footer.jsx";
 function App() {
   return (
     <>
-      <Hero />
-      <LogoClouds />
-      <FeatureMultiple />
-      <Testimonial />
-      <Stats />
-      <FeatureFive />
-      <FeatureSix />
-      <CTA />
-      <Footer />
+      <div className="App">
+        <Hero />
+        <LogoClouds />
+        <FeatureMultiple />
+        <Testimonial />
+        <Stats />
+        <FeatureFive />
+        <FeatureSix />
+        <CTA />
+        <Footer />
+      </div>
+
+      <div>
+        <span className="small-device">
+          Not available on smaller devices yet
+        </span>
+      </div>
     </>
   );
 }
